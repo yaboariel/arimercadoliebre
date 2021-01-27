@@ -1,0 +1,51 @@
+input, label{
+    font-size: 1.2rem;
+    display: inline-block;
+    }
+
+.encabezado{
+       
+    width:100%;
+    position:fixed;   
+    top:0;   
+}
+
+.registro {
+    width: 100%;
+    background: #1259c3;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 345px;
+
+}
+
+.profile {
+    text-align:left; 
+    padding: 0% 40%;
+
+
+}
+
+.categs {
+    text-align:left; 
+    padding: 0% 40%;
+
+
+}
+
+.formulario{
+    background-color: rgba(255,255,255, 0.8);
+    width: 50%;
+    padding-left: 30px;
+    background: whitesmoke;
+}
+.formulario , .registro{
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+.registro{
+    
+    padding-left: 0%;
+}
