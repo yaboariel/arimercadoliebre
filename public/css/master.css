@@ -79,7 +79,7 @@ img  {
       }   
 
 
-.opciones, .opciones2 {
+.opciones, .opciones2 ,.opciones2soloicono {
             display:none;
             }
 
@@ -183,7 +183,14 @@ img{
   width: 100%;
 }
 
+/*
+********************************************
+media screen 361px
 
+
+
+
+*/
 
 
 @media screen and (min-width: 361px) {
@@ -231,45 +238,48 @@ margin: 0;
 padding: 0; 
 padding-left: 0px;
 /*padding-right: 10px;*/
-flex-wrap: wrap;
+flex-wrap: nowrap;
 justify-content: flex-start;
 width: 50%;
 }
 .opciones li{
-    flex: 1; 
+    /*flex: 1; */
   }            
 
 .opciones a{
 
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-decoration: none;
 
   font-weight:bold;  
 
 }
 .opciones a:hover{
-  color: teal;
+  color: rgb(0, 49, 128);
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
-.opciones2 {
+.opciones2  {
+  display:none;
+  }
+
+
+.opciones2soloicono {
 display: flex;
 list-style: none;
-margin: 0; 
-padding: 0; 
-padding-left: 0px;
-/*padding-right: 10px;*/
 flex-wrap: wrap;
+justify-content:flex-end;
 width: 50%;
-justify-content: flex-end;
 
 
 }
-.opciones2 a{          
-font-size: 0.7rem;
+
+.opciones2soloicono a{          
+font-size: 1rem;
 text-decoration: none;
 font-weight:bold;
+margin-left:25px;
 }      
 
 
@@ -292,6 +302,16 @@ footer {
           text-align:center;
           padding:20px;
         }
+
+
+
+
+
+/*
+********************************************
+media screen 769px
+
+*/
 
 @media screen and (min-width: 769px) {
 .logo {
@@ -342,7 +362,7 @@ footer {
   
 .opciones a{
        
-                font-size:0.8rem;
+                font-size:0.7rem;
                 text-decoration: none;
                 padding-right: 10px;
                 font-weight:bold;  
@@ -353,7 +373,9 @@ footer {
                 background-color: white;
                 border-radius: 10px;
               }
+
               
+.opciones2soloicono  { display:none;}                  
 .opciones2 {
       display: flex;
       list-style: none;
@@ -368,7 +390,7 @@ footer {
 
       }
 .opciones2 a{          
-              font-size: 0.8rem;
+              font-size: 0.7rem;
               text-decoration: none;
               font-weight:bold;
               padding-left: 10px;
@@ -406,6 +428,12 @@ footer {
   width:30%;
  
  }
+
+
+
+
+
+
 
  @media screen and (min-width: 1000px) {
   .opciones a {
