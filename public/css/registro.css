@@ -5,7 +5,7 @@ input, label{
 
 .encabezado{
        
-    width:100%;
+    width:90%;
     position:fixed;   
     top:0;   
 }
@@ -16,7 +16,7 @@ input, label{
     /*background-size: cover;*/
     background-repeat: no-repeat;
     height: 100%;
-    margin-top: 345px;
+    
 
 }
 
@@ -41,7 +41,10 @@ input, label{
     background: whitesmoke;
 }
 .formulario , .registro{
-    padding: 30px;
+    padding-top: 6%;
+    padding-bottom: 1%;
+    padding-left:0px;
+    /*padding-right:30px;*/
     margin: auto;
     text-align: center;
 }

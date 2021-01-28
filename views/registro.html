@@ -4,53 +4,56 @@
 
 <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css ">
         <link rel="stylesheet" href="/css/master.css">
         <link rel="stylesheet" href="/css/registro.css">
         <title>Mercadoliebre</title>
-        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css ">
         <!--Responsive-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
 </head>
 
 <body>
-    <main class="ppal">
+    <main>
         <header class="encabezado">
             <section class="top">
                 <figure class="logo"><img src="/images/logo-mercado-liebre.svg" width="200px" alt="Logo mercadoliebre"></figure>
-                <p class="barbusqueda">lugar para poner barra de busqueda</p>
+                        <form class="barbusqueda" action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+
+                        <p class="cuotas"><i class="fas fa-funnel-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </section>
-            <p class="icono"><i class="fas fa-funnel-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            <p id="cuotas2"><i class="fas fa-funnel-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             <nav class="menu">
                 <ul class="opciones">
                     <li><a href="#" target="__blank">Ofertas</a></li>
-                    <li><a href="#" target="__blank">Tiendas oficiales</a></li>
+                    <li id="tiendas"><a href="#" target="__blank">Tiendas Oficiales</a></li>
                     <li><a href="#" target="__blank">Vender</a></li>
                     <li><a href="#" target="__blank">Ayuda</a></li>
                 </ul>
                 <ul class="opciones2">
-                    <li><a class="icono" href="#" target="__blank"> Crea tu cuenta<i class="fas fa-user-plus"></i></a></li>
-                    <li><a class="icono" href="#" target="__blank">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li> <a class="icono" href="#" target="__blank">Mis Compras <i class="fas fa-shopping-basket"></i></a></li> 
+                    <li><a class="icono" href="/registro" target="__blank"> Crea tu cuenta<i class="fas fa-user-plus"></i></a></li>
+                    <li><a class="icono" href="/login" target="__blank">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a class="icono" href="#" target="__blank">Mis Compras <i class="fas fa-shopping-basket"></i></a></li> 
                 </ul>
             </nav> 
             <!--Solo mostrar en celular-->
             <a class="barras" href="#"><i class="fas fa-bars"></i></a>
-            
         </header>
+
     
 
-        <hr>
-        <section>
-            <h1 class="titulo">Registro de usuario</h1>
-        </section>
         <section class="registro">
-            
-                
-            
+                                  
             <form  class="formulario" action="/" method="POST">
+                <h1 class="titulo">Registro de usuario</h1>
+
                 <div>
                     <label for="nombre">Nombre y Apellido</label>
                     <br>

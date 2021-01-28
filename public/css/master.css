@@ -102,6 +102,7 @@ img  {
            background-color: rgb(255, 255, 255);
            box-sizing: border-box;
           }
+         
 .caja-producto {
                 border-top: 1px #ebebeb solid;
                 padding:15px;
@@ -266,11 +267,13 @@ font-weight:bold;
             flex-wrap:wrap;
            }  
 
-.producto{    
-            box-shadow:  0px 0px 10px rgb(100 , 100, 100);
-            width:50%;
+.producto{  box-shadow:none;  
+            width:50%; 
+            transition: box-shadow 3s;
           }
-
+             
+.producto:hover { box-shadow:  0px 0px 100px rgb(116, 116, 116);
+} 
 .descripciones {display:hidden;
                 }
 .barras {display:none}
@@ -373,7 +376,7 @@ footer {
               flex-wrap:wrap;
              }
 .producto{
-              box-shadow:  0px 0px 10px rgb(100 , 100, 100);
+              /*box-shadow:  0px 0px 10px rgb(100 , 100, 100);*/
               width:25%;
               
             }
