@@ -368,10 +368,11 @@ media screen 769px
                 font-weight:bold;  
 
               }
-.opciones a:hover{
-                color: teal;
+.opciones a:hover, .opciones2 a:hover {
+                color: #1259c3;
                 background-color: white;
                 border-radius: 10px;
+                padding:20px;
               }
 
               
@@ -394,7 +395,9 @@ media screen 769px
               text-decoration: none;
               font-weight:bold;
               padding-left: 10px;
-          }      
+          }   
+          
+           
                   
   
 #tiendas   {
