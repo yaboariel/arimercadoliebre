@@ -11,8 +11,17 @@ main {
 .encabezado {
               background-color:#EAC926;
               padding-bottom:3px;
-            }
+              width:90%;
+              position:fixed;   
+              top: 0;
+              height:100px;
+              z-index: 100;
 
+            }
+#banner {  margin-top:100px; ;
+           
+
+}
 
 
 /* top envuelve al logo, la barra de busqueda y mensaje de cuotas, salvo para celulares donde oculto las cuotas*/
@@ -193,7 +202,8 @@ media screen 361px
   .logo {
     width:20%
    }
-
+  .encabezado {height:100px}
+  #banner {  margin-top:100px; }
 
 .barbusqueda input[type=text]{
     /*float: right;*/
@@ -235,7 +245,7 @@ padding-left: 0px;
 /*padding-right: 10px;*/
 flex-wrap: nowrap;
 justify-content: flex-start;
-width: 50%;
+width: 60%;
 }
 .opciones li{
     /*flex: 1; */
@@ -265,7 +275,7 @@ display: flex;
 list-style: none;
 flex-wrap: wrap;
 justify-content:flex-end;
-width: 50%;
+width: 40%;
 
 }
 
@@ -315,6 +325,11 @@ media screen 400px
    
   }
 
+  .encabezado {
+    height:100px;
+
+  }
+  #banner {  margin-top:100px;}
 
 .barbusqueda input[type=text]{
     /*float: right;*/
@@ -433,6 +448,13 @@ media screen 769px
 .logo {
           width:30%;
       }
+
+
+      .encabezado {
+        height:150px;
+    
+      }
+      #banner {  margin-top:150px;}      
   .barbusqueda input[type=text]
   {
     /*float: right;*/
@@ -478,7 +500,7 @@ media screen 769px
   
 .opciones a{
        
-                font-size:0.7rem;
+                font-size:0.9rem;
                 text-decoration: none;
                 padding-right: 10px;
                 font-weight:bold;  
@@ -507,7 +529,7 @@ media screen 769px
 
       }
 .opciones2 a{          
-              font-size: 0.7rem;
+              font-size: 0.9rem;
               text-decoration: none;
               font-weight:bold;
               padding-left: 10px;
@@ -555,6 +577,12 @@ media screen 769px
 
 
  @media screen and (min-width: 1000px) {
+  
+  .encabezado {
+    height:150px;
+
+  }
+  #banner {  margin-top:150px;}
   .opciones a {
     font-size:1rem;
 
@@ -567,7 +595,12 @@ media screen 769px
  }
 
 @media screen and (min-width: 1200px) {
+   
+  .encabezado {
+    height:200px;
 
+  }
+  #banner {  margin-top:200px;}
   .opciones  {
     width: 40%;
             }
