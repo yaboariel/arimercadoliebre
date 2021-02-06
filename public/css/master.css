@@ -295,11 +295,13 @@ margin-left:10px;
             width:50%; 
             transition: box-shadow 1s;
           }
-             
+.descripciones {display:none;
+          }
+          
+
 .producto:hover { box-shadow:  0px 0px 100px rgb(116, 116, 116);
 } 
-.descripciones {display:hidden;
-                }
+
 .barras {display:none}
  
 footer { 
@@ -422,11 +424,12 @@ margin-left:25px;
             width:50%; 
             transition: box-shadow 1s;
           }
-             
-.producto:hover { box-shadow:  0px 0px 100px rgb(116, 116, 116);
-} 
 .descripciones {display:hidden;
-                }
+          }             
+.producto:hover { box-shadow:  0px 0px 100px rgb(116, 116, 116);
+                
+                } 
+
 .barras {display:none}
  
 footer { 
@@ -552,10 +555,8 @@ media screen 769px
               
             }
 .descripciones {
-                  display:hidden;
-
-                }
- 
+             display:hidden;
+            }
 
 
 .barras {display:none}
@@ -626,6 +627,11 @@ media screen 769px
 
 
   }
+   .producto:hover  .descripciones {
+    display:block;
+    color=red;
+   }
+
 #footcontainer {
   box-sizing: border-box;
   display:flex;
